@@ -1,0 +1,20 @@
+name: example
+dependencies:
+  angular: ^4.0.0
+  angular_router: ^1.0.0
+dev_dependencies:
+  angular_platform_transformer:
+    path: ../
+  browser: ^0.10.0
+  dart_to_js_script_rewriter: ^1.0.0
+transformers:
+  - dart_to_js_script_rewriter
+  - angular_platform_transformer:
+      directives:
+        - "package:angular/angular.dart#COMMON_DIRECTIVES"
+        - "package:angular_router/angular_router.dart#ROUTER_DIRECTIVES"
+      pipes:
+        - "package:angular/angular.dart#COMMON_PIPES"
+  - angular:
+      entry_points:
+        - web/main.dart

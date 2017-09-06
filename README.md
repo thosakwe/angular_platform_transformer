@@ -1,5 +1,4 @@
 # angular_platform_transformer
-# angular_platform_transformer
 [![Pub](https://img.shields.io/pub/v/angular_platform_transformer.svg)](https://pub.dartlang.org/packages/angular_platform_transformer)
 [![build status](https://travis-ci.org/thosakwe/angular_platform_transformer.svg)](https://travis-ci.org/thosakwe/angular_platform_transformer)
 
@@ -26,5 +25,8 @@ transformers:
         - "package:angular/angular.dart#COMMON_DIRECTIVES"
       pipes:
         - "package:foo/foo.dart#BAR_BAZ"
+  - angular
 ```
+
+**This transformer MUST be invoked before `angular`.**
 
