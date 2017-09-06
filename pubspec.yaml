@@ -1,0 +1,13 @@
+name: angular_platform_transformer
+version: 1.0.0
+description: Globally import directives and pipes in Angular 4+ applications.
+author: Tobe O <thosakwe@gmail.com>
+homepage: https://github.com/thosakwe/angular_platform_transformer
+environment:
+  sdk: ">=1.24.0"
+dependencies:
+  barback: ^0.15.2
+  code_builder: ^1.0.0
+  source_gen: ^0.7.0
+dev_dependencies:
+  test: ^0.12.0
